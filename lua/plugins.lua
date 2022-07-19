@@ -66,7 +66,16 @@ require('packer').startup {
         require('plugins.bufferline')
       end,
     }
-     
+    use {
+      'nvim-lualine/lualine.nvim',
+      requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+    }
+
+    use {
+      'nvim-lualine/lualine.nvim',
+      requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+    }
+
     -- Completion
     use {
       'windwp/nvim-autopairs',
